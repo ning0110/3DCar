@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12B19" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Cuu-zN-Lcs">
+    <dependencies>
+        <development version="4400" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="URF-he-Skb">
+            <objects>
+                <navigationController storyboardIdentifier="MainNavigationController" definesPresentationContext="YES" id="Cuu-zN-Lcs" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fYw-pi-LLO">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="CzS-Aw-q6C" kind="relationship" relationship="rootViewController" id="vAA-aV-erv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lcv-QJ-fvc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18" y="52"/>
+        </scene>
+        <!--Welcome View Controller-->
+        <scene sceneID="Ofx-yl-q4g">
+            <objects>
+                <viewController id="CzS-Aw-q6C" customClass="WelcomeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Oqx-GK-oAG">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="intro1@2x.png" id="O6S-Yy-ase">
+                                <rect key="frame" x="0.0" y="-45" width="320" height="461"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="z6C-lQ-CPh">
+                                <rect key="frame" x="118" y="379" width="84" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="START" image="btn-start@2x.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="thE-hg-z4T" kind="push" id="l3U-B5-ATP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IbE-wJ-sRF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Owr-Li-fxz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="406" y="52"/>
+        </scene>
+        <!--Find Your Car View Controller-->
+        <scene sceneID="x9O-dI-aeg">
+            <objects>
+                <viewController id="thE-hg-z4T" customClass="FindYourCarViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ejg-vz-7Jb">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="findyourcar@2x.png" id="u53-7B-bAi">
+                                <rect key="frame" x="0.0" y="-44" width="320" height="460"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="a88-My-nHY">
+                                <rect key="frame" x="46" y="286" width="229" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="btn-enter@2x.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RlD-UR-zlw">
+                                <rect key="frame" x="120" y="382" width="80" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="DONE" image="btn-done@2x.png">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6Cr-q3-icE" kind="push" id="YH2-YX-Rr0"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" id="mQz-TW-tWD">
+                                <rect key="frame" x="0.0" y="82" width="2240" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="selectcar1@2x.png" id="FGT-e0-MWJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="selectcar2@2x.png" id="dn8-Gq-d44">
+                                        <rect key="frame" x="320" y="0.0" width="320" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="selectcar3@2x.png" id="4wu-WB-cz4">
+                                        <rect key="frame" x="640" y="0.0" width="320" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="selectcar4@2x.png" id="Hhp-hW-tLs">
+                                        <rect key="frame" x="960" y="0.0" width="320" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="selectcar5@2x.png" id="xAg-O1-ypg">
+                                        <rect key="frame" x="1280" y="0.0" width="320" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="selectcar6@2x.png" id="YNo-6d-bIz">
+                                        <rect key="frame" x="1600" y="0.0" width="320" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="selectcar7@2x.png" id="LQo-D8-fdy">
+                                        <rect key="frame" x="1920" y="0.0" width="320" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Qbh-s0-YkD" appends="YES" id="Qrx-0Z-ea9"/>
+                                    <outletCollection property="gestureRecognizers" destination="ITB-TY-3Dd" appends="YES" id="WMQ-37-tWD"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="t60-aw-ZBj"/>
+                    <connections>
+                        <outlet property="selectCarView" destination="mQz-TW-tWD" id="hxi-kZ-Oic"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OJA-kj-Mjj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="Qbh-s0-YkD">
+                    <connections>
+                        <action selector="swipeCar:" destination="thE-hg-z4T" id="0Hr-Ph-FhO"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="ITB-TY-3Dd">
+                    <connections>
+                        <action selector="swipeCar:" destination="thE-hg-z4T" id="hfd-xY-yIg"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="790" y="52"/>
+        </scene>
+        <!--Trunk View Controller-->
+        <scene sceneID="pTA-qh-6q6">
+            <objects>
+                <viewController storyboardIdentifier="trunkViewController" id="6Cr-q3-icE" customClass="TrunkViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="paD-kH-CfF">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="QO9-aD-ati">
+                                <rect key="frame" x="0.0" y="-265" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="4Cb-dl-P6l">
+                                <rect key="frame" x="0.0" y="215" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="HFM-s9-Nhi">
+                                        <rect key="frame" x="0.0" y="49" width="320" height="431"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="emptyList-bg.png" id="IVn-ow-95L">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7iK-ye-jq6">
+                                                <rect key="frame" x="0.0" y="0.0" width="72" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="chb-B9-cjh" kind="push" identifier="detailViewSegue" id="fBH-BR-aek"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </scrollView>
+                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="2 OF 7 ITEMS WON'T FIT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" id="NIY-gM-mB2">
+                                        <rect key="frame" x="0.0" y="49" width="320" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.63921568627450975" green="0.12549019607843137" blue="0.0039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="11"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pRP-UP-8Km">
+                                        <rect key="frame" x="0.0" y="0.0" width="127" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="=" image="dragBtn-bg@2x.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="dxX-Bg-YrX" appends="YES" id="KME-CK-Drl"/>
+                                            <outletCollection property="gestureRecognizers" destination="TfB-4p-mRa" appends="YES" id="K9C-T0-5W5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="KzF-Xt-HbG">
+                                        <rect key="frame" x="127" y="-8" width="65" height="63"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="ADD" image="add-btn-new@2x.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startScan:" destination="6Cr-q3-icE" eventType="touchUpInside" id="As3-YB-NGh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="SOj-f6-UcS">
+                                        <rect key="frame" x="192" y="0.0" width="128" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="setting-btn@2x.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iVK-9h-B5U"/>
+                    <connections>
+                        <outlet property="emptyList" destination="IVn-ow-95L" id="IUD-uE-R1R"/>
+                        <outlet property="listScrollView" destination="HFM-s9-Nhi" id="xGw-v4-mZd"/>
+                        <outlet property="listView" destination="4Cb-dl-P6l" id="pSB-If-YQm"/>
+                        <outlet property="trunkStatusLabel" destination="NIY-gM-mB2" id="uva-2S-hlo"/>
+                        <outlet property="trunkView" destination="QO9-aD-ati" id="z26-II-Mfm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A5t-ku-BYx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="dxX-Bg-YrX">
+                    <connections>
+                        <action selector="handleSwipeUp:" destination="6Cr-q3-icE" id="CCA-Dr-RgF"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="TfB-4p-mRa">
+                    <connections>
+                        <action selector="handleSwipeDown:" destination="6Cr-q3-icE" id="Imd-Da-vue"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1167" y="52"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="2dm-7Y-GUQ">
+            <objects>
+                <viewController id="chb-B9-cjh" customClass="DetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mJP-TD-IUq">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="common-bg@2x.png" id="mXx-hX-wIk">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="436"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="detail-content-2-fit@2x.png" id="qeO-a8-gPY">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="331"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jIG-a2-iZw">
+                                <rect key="frame" x="10" y="363" width="89" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="in-trunk-btn@2x.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="inTrunkBtnPressed:" destination="chb-B9-cjh" eventType="touchUpInside" id="nLX-Ow-qMZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Nut-1O-XGT">
+                                <rect key="frame" x="115" y="363" width="89" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="out-of-trunk-btn@2x.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="outTrunkBtnPressed:" destination="chb-B9-cjh" eventType="touchUpInside" id="MD6-08-mBI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="50" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Jmr-FR-cgt">
+                                <rect key="frame" x="220" y="363" width="89" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="delete-btn@2x.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteBtnPressed:" destination="chb-B9-cjh" eventType="touchUpInside" id="lLX-Hn-Tvj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="H7O-BC-Moj"/>
+                    <connections>
+                        <outlet property="btnDelete" destination="Jmr-FR-cgt" id="7NI-5j-bam"/>
+                        <outlet property="btnInTrunk" destination="jIG-a2-iZw" id="GFU-Qg-apX"/>
+                        <outlet property="btnOutTrunk" destination="Nut-1O-XGT" id="CuW-LY-RLz"/>
+                        <outlet property="detailContentImageView" destination="qeO-a8-gPY" id="gRN-hb-LcN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BC0-B3-pLv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1654" y="670"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="add-btn-new@2x.png" width="130" height="126"/>
+        <image name="btn-done@2x.png" width="160" height="69"/>
+        <image name="btn-enter@2x.png" width="458" height="109"/>
+        <image name="btn-start@2x.png" width="169" height="69"/>
+        <image name="common-bg@2x.png" width="640" height="960"/>
+        <image name="delete-btn@2x.png" width="179" height="119"/>
+        <image name="detail-content-2-fit@2x.png" width="640" height="702"/>
+        <image name="dragBtn-bg@2x.png" width="253" height="99"/>
+        <image name="emptyList-bg.png" width="640" height="432"/>
+        <image name="findyourcar@2x.png" width="640" height="960"/>
+        <image name="in-trunk-btn@2x.png" width="179" height="119"/>
+        <image name="intro1@2x.png" width="640" height="960"/>
+        <image name="out-of-trunk-btn@2x.png" width="179" height="119"/>
+        <image name="selectcar1@2x.png" width="640" height="300"/>
+        <image name="selectcar2@2x.png" width="640" height="300"/>
+        <image name="selectcar3@2x.png" width="640" height="300"/>
+        <image name="selectcar4@2x.png" width="640" height="300"/>
+        <image name="selectcar5@2x.png" width="640" height="301"/>
+        <image name="selectcar6@2x.png" width="640" height="301"/>
+        <image name="selectcar7@2x.png" width="640" height="300"/>
+        <image name="setting-btn@2x.png" width="255" height="99"/>
+    </resources>
+    <classes>
+        <class className="DetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="backBtnPressed:"/>
+                <relationship kind="action" name="deleteBtnPressed:"/>
+                <relationship kind="action" name="inTrunkBtnPressed:"/>
+                <relationship kind="action" name="outTrunkBtnPressed:"/>
+                <relationship kind="outlet" name="backBtn" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="btnDelete" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btnInTrunk" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btnOutTrunk" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="detailContentImageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="FindYourCarViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FindYourCarViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="swipeCar:" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="outlet" name="selectCarView" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="TrunkViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TrunkViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancelButtonPressed:" candidateClass="UIButton"/>
+                <relationship kind="action" name="handleSwipeDown:" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="action" name="handleSwipeUp:" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="action" name="itemButtonPressed:" candidateClass="UIButton"/>
+                <relationship kind="action" name="listSwipe:" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="action" name="startScan:"/>
+                <relationship kind="outlet" name="dragButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="emptyList" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="listScrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="listView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="trunkStatusLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="trunkView" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="WelcomeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WelcomeViewController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <nil key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
